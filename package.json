@@ -1,0 +1,33 @@
+{
+  "name": "noughts-and-crosses",
+  "version": "1.0.0",
+  "description": "Simple noughts and crosses game",
+  "main": "index.js",
+  "dependencies": {
+    "joose-utils": "^1.0.1"
+  },
+  "devDependencies": {
+    "joose-utils": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scoobster17/noughts-and-crosses.git"
+  },
+  "keywords": [
+    "Noughts",
+    "Crosses",
+    "Tic",
+    "Tac",
+    "Toe",
+    "Game"
+  ],
+  "author": "Phil Gibbins <scoobster17@hotmail.co.uk> (http://www.philgibbins.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scoobster17/noughts-and-crosses/issues"
+  },
+  "homepage": "https://github.com/scoobster17/noughts-and-crosses#readme"
+}

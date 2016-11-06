@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Noughts and Crosses</title>
+	<style type="text/css">
+		.visually-hidden {
+			left:-999em;
+			position: absolute;
+			top:-999em;
+		}
+	</style>
+</head>
+<body>
+	<h1>Noughts and Crosses</h1>
+	<h2>Player Details</h2>
+	<form>
+		<fieldset>
+			<h3>Player 1</h3>
+			<label for="player-1-name">
+				<span class="visually-hidden">
+					Player 1
+				</span>
+				Name (optional)
+			</label>
+			<input type="text" name="player-1-name" id="player-1-name" />
+		</fieldset>
+		<fieldset>
+			<h3>Player 2</h3>
+			<label for="player-2-name">
+				<span class="visually-hidden">
+					Player 2
+				</span>
+				Name (optional)
+			</label>
+			<input type="text" name="player-2-name" id="player-2-name" />
+		</fieldset>
+		<input type="submit" value="Start game">
+	</form>
+	<section id="game-table" class="visually-hidden">
+		<h2>Game Table; it's <span id="turn-indicator">Player 1</span>'s Turn</h2>
+		<table>
+			<thead>
+				<tr>
+					<th scope="col">Rows</th>
+					<th scope="col">Column 1</th>
+					<th scope="col">Column 2</th>
+					<th scope="col">Column 3</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">Row 1</th>
+					<td>Empty</td>
+					<td>Empty</td>
+					<td>Empty</td>
+				</tr>
+				<tr>
+					<th scope="row">Row 2</th>
+					<td>Empty</td>
+					<td>Empty</td>
+					<td>Empty</td>
+				</tr>
+				<tr>
+					<th scope="row">Row 3</th>
+					<td>Empty</td>
+					<td>Empty</td>
+					<td>Empty</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<script type="text/javascript" src="../node_modules/joose-utils/js/joose-utils.min.js"></script>
+	<script type="text/javascript" src="js/noughts-and-crosses.js"></script>
+</body>
+</html>
