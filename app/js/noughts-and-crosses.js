@@ -37,12 +37,17 @@ window.nac = (function() {
 		});
 		elems.cells.forEach(function(element) {
 			element.addEventListener('click', function(event) {
-				var type = config.playerDetails[config.currentPlayer - 1].type;
-				joose.utils.addClass(event.target, type);
-				event.target.innerHTML = type;
-				endTurn();
-				checkForWin();
-				startTurn();
+				if (
+					!joose.utils.hasClass(event.target, 'noughts') &&
+					!joose.utils.hasClass(event.target, 'crosses')
+				) {
+					var type = config.playerDetails[config.currentPlayer - 1].type;
+					joose.utils.addClass(event.target, type);
+					event.target.innerHTML = type;
+					endTurn();
+					checkForWin();
+					startTurn();
+				}
 			});
 		});
 	};
