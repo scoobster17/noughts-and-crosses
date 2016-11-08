@@ -7,8 +7,8 @@
 </head>
 <body>
 	<h1>Noughts and Crosses</h1>
-	<h2>Player Details</h2>
 	<form>
+		<h2>Player Details</h2>
 		<fieldset>
 			<h3>Player 1</h3>
 			<label for="player-1-name">
@@ -34,7 +34,7 @@
 	<section id="game-table" class="visually-hidden">
 		<h2>Game Table; it's <span id="turn-indicator">Player 1</span>'s Turn</h2>
 		<table>
-			<thead>
+			<thead class="visually-hidden">
 				<tr>
 					<th scope="col">Rows</th>
 					<th scope="col">Column 1</th>
@@ -44,19 +44,19 @@
 			</thead>
 			<tbody>
 				<tr>
-					<th scope="row">Row 1</th>
+					<th scope="row" class="visually-hidden">Row 1</th>
 					<td><span class="visually-hidden">empty</span></td>
 					<td><span class="visually-hidden">empty</span></td>
 					<td><span class="visually-hidden">empty</span></td>
 				</tr>
 				<tr>
-					<th scope="row">Row 2</th>
+					<th scope="row" class="visually-hidden">Row 2</th>
 					<td><span class="visually-hidden">empty</span></td>
 					<td><span class="visually-hidden">empty</span></td>
 					<td><span class="visually-hidden">empty</span></td>
 				</tr>
 				<tr>
-					<th scope="row">Row 3</th>
+					<th scope="row" class="visually-hidden">Row 3</th>
 					<td><span class="visually-hidden">empty</span></td>
 					<td><span class="visually-hidden">empty</span></td>
 					<td><span class="visually-hidden">empty</span></td>
