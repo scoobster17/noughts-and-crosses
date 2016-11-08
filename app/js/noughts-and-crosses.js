@@ -43,7 +43,7 @@ window.nac = (function() {
 				) {
 					var type = config.playerDetails[config.currentPlayer - 1].type;
 					joose.utils.addClass(event.target, type);
-					event.target.innerHTML = type;
+					event.target.innerHTML = (type === 'noughts' ? 'nought' : 'cross');
 					endTurn();
 					checkForWin();
 					startTurn();
